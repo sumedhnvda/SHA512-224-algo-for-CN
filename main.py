@@ -90,9 +90,9 @@ def sha512_224(message):
     # Combine the first seven hash values for SHA-512/224
     final_hash = ''.join(f'{x:016x}' for x in hash_values[:7])
     return final_hash[:56]
-
-# Example Usage
+    
+#Demo 
 if __name__ == "__main__":
-    data = "sumedh"
+    data=input("enter the value to hash: ")
     hash_result = sha512_224(data)
     print("SHA-512/224:", hash_result)
